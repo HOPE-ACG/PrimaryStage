@@ -1,4 +1,4 @@
-package com.acg.streaming
+package com.acg.streaming.caseClass
 
 /**
  * 城市信息表样例类

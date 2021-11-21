@@ -1,5 +1,7 @@
 package com.acg.streaming
 
+import com.acg.streaming.caseClass.RanOpt
+
 import scala.collection.mutable.ListBuffer
 import scala.util.Random
 

@@ -1,4 +1,4 @@
-package com.acg.streaming
+package com.acg.streaming.util
 
 import java.io.InputStreamReader
 import java.util.Properties
