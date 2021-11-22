@@ -26,9 +26,10 @@ object MockerRealTime {
     //随机生成实时数据，并发送到Kafka集群
     while (true) {
       for(line <- generateMockData()) {
+        println(line)
         kafkaProducer.send(new ProducerRecord[String, String]("randomData", line))
       }
-      Thread.sleep(2000)
+      Thread.sleep(5000)
     }
   }
 

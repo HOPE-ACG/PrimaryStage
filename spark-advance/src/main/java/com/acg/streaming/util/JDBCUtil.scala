@@ -66,7 +66,7 @@ object JDBCUtil {
           for (i <- params.indices) {
             pstmt.setObject(i + 1, params(i))
           }
-          pstmt.addBatch()
+          pstmt.addBatch() //!!!
         }
       }
       rtn = pstmt.executeBatch()

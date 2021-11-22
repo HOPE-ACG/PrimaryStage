@@ -12,14 +12,14 @@ object RandomOptions {
 
   def apply[T] (ranOpts: RanOpt[T]*): RandomOptions[T] = {
 
-    val randomOptions = new RandomOptions[T]
+    val randomOptions: RandomOptions[T] = new RandomOptions[T]
     for (elem <- ranOpts) {
       randomOptions.totalWeight += elem.weight
       for(_ <- 1 to elem.weight) {
         randomOptions.listBuffer += elem.value
       }
     }
-    randomOptions[T]
+    randomOptions
   }
 }
 
