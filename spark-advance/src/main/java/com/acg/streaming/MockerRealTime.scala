@@ -41,11 +41,13 @@ object MockerRealTime {
 
     val arrayBuffer: ArrayBuffer[String] = ArrayBuffer[String]()
     //随机对象范围
-    val randomOptions: RandomOptions[CityInfo] = RandomOptions(RanOpt(CityInfo(1, "北京", "华北"), 30),
+    val randomOptions: RandomOptions[CityInfo] = RandomOptions(
+      RanOpt(CityInfo(1, "北京", "华北"), 30),
       RanOpt(CityInfo(2, "上海", "华东"), 30),
       RanOpt(CityInfo(3, "广州", "华南"), 10),
       RanOpt(CityInfo(4, "深圳", "华南"), 20),
-      RanOpt(CityInfo(5, "天津", "华北"), 10))
+      RanOpt(CityInfo(5, "天津", "华北"), 10)
+    )
 
     val random = new Random()
     //创建50个随机对象

@@ -27,5 +27,7 @@
     <modules>
         <module>spark-core</module>
         <module>spark-advance</module>
+        <module>scala</module>
+        <module>hadoop</module>
     </modules>
 </project>
